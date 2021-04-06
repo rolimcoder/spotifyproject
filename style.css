@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(12, 12, 12);
+  color: whitesmoke;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.under-title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 14px;
+  /* font-style: italic; */
+  padding: 0;
+}
+.table {
+  color: white;
+  border: none;
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border: none;
+}
+.album-description {
+  position: absolute;
+  top: 250px;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+.album-description p:first-of-type {
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.album-description p:nth-child(2) {
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+.album-description p:last-of-type {
+  font-size: 13px;
+}
+.btn {
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  font-weight: 350;
+
+  color: #fafdff;
+  text-align: center;
+  background-color: rgb(51, 168, 51);
+  border: 1px solid transparent;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.95rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media screen and (max-width: 770px) {
+  .album-description {
+    max-width: 500px;
+    position: absolute;
+    top: 40px;
+    right: -40px;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+  .album-description-img {
+    margin-right: 100px;
+  }
+}
+.tracklist-container {
+  margin-right: 100px;
+}
+
+tr td:last-of-type {
+  color: #6c757d;
+}
+.dot-style {
+  font-size: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+td > a {
+  color: white;
+  text-decoration: none;
+}
