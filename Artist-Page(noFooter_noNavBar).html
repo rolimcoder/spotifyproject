@@ -31,7 +31,7 @@ div#headerImage::after{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 57%;
     opacity: .5;
     background-color: black;
 }
@@ -56,7 +56,7 @@ right: 50%;
 transform: translate(50%, 25%);
 z-index: 1;
 font-variant:small-caps;
-color: whitesmoke;
+color: lightgray;
 letter-spacing: 1px;
 }
 
@@ -67,7 +67,7 @@ div#musicButtons {
     justify-content: center;
 top: 42%;
 padding: 0;
-transform: translateX(6%);
+transform: translateX(9%);
 
 z-index: 2;
 }
@@ -101,11 +101,13 @@ padding-right: 3rem;
 padding-top: .5rem;
 }
 div#miniMenu {
-    top: 25rem;
+    top: 24.5rem;
     position: relative;
     
 }
 ul#minMenu-group {
+    font-size: 21px;
+    font-variant: small-caps;
     position: relative;
 list-style-type: none;
 display: flex;
@@ -119,18 +121,22 @@ width: 100%;
 height:100%;
 top:-5%;
 position: absolute;
-background-color: black;
+background-image: linear-gradient(45deg, transparent, black, transparent);
 opacity: .3;
 z-index: 1;
 }
 
 ul#minMenu-group li a:hover {
-    text-decoration: underline;
-    text-decoration-color:rgb(73, 161, 73);}
+    border-bottom: solid rgb(90, 211, 90) 2px;
+    }
 
 main {
+    background: rgb(0,0,0);
+background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.942818304026349) 34%, rgba(20,20,20,1) 100%);
     color: whitesmoke;
 }
+
+/**Media Queries**/
 
 </style>
 </head>
@@ -157,13 +163,13 @@ main {
 
     <div id="miniMenu">
             <ul id="minMenu-group">
-              <li class="active">
+              <li class="active mx-3">
                 <a class="nav-link text-light" href="#">overview <span class="sr-only">(current)</span></a>
               </li>
-              <li>
+              <li class="mx-3">
                 <a class="nav-link text-light" href="#">related artists</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link text-light" href="#">about</a>
               </li>
             </ul>
@@ -174,7 +180,7 @@ main {
     
 
     <main>
-<br><h3 class="text-white" style="font-family: 'Dela Gothic One', cursive, arial; position: relative;">Albums</h3>
+<br><h3 class="text-white" style="font-family: 'Dela Gothic One', cursive, arial; position: relative; text-indent: 3rem;">Albums</h3>
 <br>
         <div class="container">
             <div class="row">
