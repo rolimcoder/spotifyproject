@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+  border-bottom: 1px solid #d9dadc;
+}
+#span1 {
+  font-size: 16px;
+}
+#btn-facebook,
+#btn-apple,
+#input-email-username,
+#input-password,
+#sign-up {
+  width: 500px;
+  min-width: 160px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 16px 14px 18px;
+}
+#input-email-username,
+#input-password {
+  opacity: 0.7;
+}
+#btn-login {
+  width: 25%;
+  min-width: 100px;
+}
+
+#signup {
+  font-size: 12px;
+}
+#sign-up {
+  border: 2px solid #1b1b1b;
+}
+#btn-facebook:hover {
+  background-color: #3a61b3;
+}
+#btn-facebook:hover {
+  background-color: #333;
+}
+#input-email-username,
+#input-password {
+  border: 1px solid #d9dadc;
+  color: #222326;
+}
+
+/*  .input-icons i {
+    position: absolute;
+}
+  
+ .input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    right: ;
+} */
