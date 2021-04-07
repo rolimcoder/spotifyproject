@@ -22,7 +22,8 @@ background-image: url("./Queen\ background\ header.jpg");
 background-size:cover;
 
 background-position:top,right;
-min-height: 27rem;
+min-height: 35rem;
+padding: 0;
 }
 
 div#headerImage::after{
@@ -31,7 +32,7 @@ div#headerImage::after{
     top: 0;
     left: 0;
     width: 100%;
-    height: 57%;
+    height: 36rem;
     opacity: .5;
     background-color: black;
 }
@@ -40,20 +41,22 @@ div#headerImage::after{
     font-family: 'Dela Gothic One', cursive, arial; 
 color: whitesmoke;
 font-size: 4rem;
-position: absolute;
-top: 25%;
+position: relative;
+top: 14rem;
 right: 50%;
-transform: translate(50%, 25%);
+transform: translate(44%, 25%);
 z-index: 1;
 }
 
 #monthlyListeners {
-    position: absolute;
+display: flex;
+    position: relative;
+	justify-content: center;
     text-align: center;
     width: 72%;
-top: 25%;
-right: 50%;
-transform: translate(50%, 25%);
+top: 17rem;
+right: 24%;
+transform: translate(44%, 25%);
 z-index: 1;
 font-variant:small-caps;
 color: lightgray;
@@ -63,11 +66,12 @@ letter-spacing: 1px;
 /**Buttons**/
 div#musicButtons {
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
-top: 42%;
+top: 15rem;
+left: -26rem;
 padding: 0;
-transform: translateX(9%);
+transform: translateX(27rem);
 
 z-index: 2;
 }
@@ -101,7 +105,7 @@ padding-right: 3rem;
 padding-top: .5rem;
 }
 div#miniMenu {
-    top: 24.5rem;
+    top: 18.5rem;
     position: relative;
     
 }
@@ -119,7 +123,7 @@ div#miniMenu::after {
 content: " ";
 width: 100%;
 height:100%;
-top:-5%;
+top: 0;
 position: absolute;
 background-image: linear-gradient(45deg, transparent, black, transparent);
 opacity: .3;
@@ -138,6 +142,7 @@ background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.9428183040
 
 /**Media Queries**/
 
+
 </style>
 </head>
 
@@ -147,11 +152,11 @@ background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.9428183040
     <header>
 <!--Picture-->
 <div class="container-fluid" id="headerImage" style="padding: 0;">
-    <div>
+    <div style="text-align: center;">
     <p class="muted" id="monthlyListeners">33,000,575 monthly Listeners</p>
     <p id="queenTitle">Queen</p>
     <div id="musicButtons" class="container">
-        <div class="row" style="width: 80%; justify-content: center;">
+        <div class="row mt-2" style="width: 80%; justify-content: center;">
     <button id="playButton" class="text-light rounded-pill mr-2 mb-2">PLAY</button>
     <button id="followButton" class="text-light rounded-pill mr-2 mb-2">FOLLOW</button>
     <!--Icon-->
@@ -180,7 +185,7 @@ background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.9428183040
     
 
     <main>
-<br><h3 class="text-white" style="font-family: 'Dela Gothic One', cursive, arial; position: relative; text-indent: 3rem;">Albums</h3>
+<br><h3 class="text-white" style="font-family: 'Dela Gothic One', cursive, arial; position: relative; text-indent: 10rem;">Albums</h3>
 <br>
         <div class="container">
             <div class="row">
@@ -272,3 +277,5 @@ background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.9428183040
     </footer>
 </body>
 </html>
+
+
