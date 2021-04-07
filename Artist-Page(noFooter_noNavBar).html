@@ -17,6 +17,11 @@
         background-color: rgb(20,20,20);
     }
 
+    nav#headest {
+      display: none;
+
+    }
+
 div#headerImage {
 background-image: url("./Queen\ background\ header.jpg");
 background-size:cover;
@@ -76,16 +81,29 @@ transform: translateX(27rem);
 z-index: 2;
 }
 
+div#musicButtons button#playButton:hover {
+  font-weight: bold;
+  background-color: rgb(43, 190, 43);
+}
+
+div#musicButtons button#followButton:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
 #playButton{
+  color: whitesmoke;
 background-color: rgb(73, 161, 73);
 padding: 1% 9%;
 }
 #followButton{
+  color: whitesmoke;
     padding: 1% 8%;
     background-color:transparent;
     border: solid 3px whitesmoke;
     margin-right: 1rem; 
 }
+/**
 #followButton::after{
     content: " ";
     position: absolute;
@@ -98,12 +116,19 @@ padding: 1% 9%;
     opacity: .2;
     border-radius: 20px;
 }
+**/
+
 #iconButton {
 color: whitesmoke;
 font-size: 2rem;
 padding-right: 3rem;
-padding-top: .5rem;
+padding-top: 0;
 }
+
+div#ellipsisContainer:hover i#iconButton {
+  font-size: 3rem;
+}
+
 div#miniMenu {
     top: 18.5rem;
     position: relative;
@@ -135,12 +160,56 @@ ul#minMenu-group li a:hover {
     }
 
 main {
-    background: rgb(0,0,0);
-background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.942818304026349) 34%, rgba(20,20,20,1) 100%);
+  background-image: linear-gradient(184deg, rgba(0,0,0,1) 10%, rgba(24,24,24,0.942818304026349) 84%, rgba(20,20,20,1) 45%);
     color: whitesmoke;
 }
 
 /**Media Queries**/
+
+@media screen and (max-width: 768px) {
+  div#miniMenu::after {
+    visibility: hidden;
+  }
+
+  div#headerImage::after {
+    height: 145%;
+  }
+
+  nav#headest {
+  display: flex;
+  flex-direction: row;
+  /**justify-content: flex-end;**/
+}
+
+}
+
+@media screen and (max-width: 527px) {
+
+  div#headerImage {
+    min-height: 45rem;
+  }
+
+div#miniMenu {
+  text-align: end;
+}
+
+  ul#minMenu-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul#minMenu-group li {
+width: 7rem;
+  }
+
+main {
+  padding-top: 5rem;
+}
+
+}
+
+
+
 
 
 </style>
@@ -150,22 +219,61 @@ background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.9428183040
 <body>
 
     <header>
+
+<!--Headest-->
+<!--<div id="SpotifyLogo">
+<a href="#"><img src="./SpotifyLogo.PNG" width="100" height="80" alt="logo" /></a>
+</div>-->
+<nav class="navbar navbar-expand-sm navbar-light bg-light" id="headest" style="z-index: 2;">
+  <a class="navbar-brand" href="#"><img src="./SpotifyLogo.PNG" width="100" height="34" alt="logo" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" style="flex-direction: row-reverse;">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link invisible" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item invisible">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1"><i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="./YourLibraryLogo.PNG" height="28" width="33" alt="yourLibrary" /></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-------------------------------------------------->
+
+
+
 <!--Picture-->
 <div class="container-fluid" id="headerImage" style="padding: 0;">
+
+        
+
     <div style="text-align: center;">
     <p class="muted" id="monthlyListeners">33,000,575 monthly Listeners</p>
     <p id="queenTitle">Queen</p>
     <div id="musicButtons" class="container">
         <div class="row mt-2" style="width: 80%; justify-content: center;">
-    <button id="playButton" class="text-light rounded-pill mr-2 mb-2">PLAY</button>
-    <button id="followButton" class="text-light rounded-pill mr-2 mb-2">FOLLOW</button>
+    <button id="playButton" class="rounded-pill mr-2 mb-2">PLAY</button>
+    <button id="followButton" class="rounded-pill mr-2 mb-2">FOLLOW</button>
     <!--Icon-->
-    <div>
+    <div id="ellipsisContainer">
     <a href="#"><i id="iconButton" class="fas fa-ellipsis-h" id="iconButton"></i></a>
 </div>    
 </div></div>
     </div>
-
+    
     <div id="miniMenu">
             <ul id="minMenu-group">
               <li class="active mx-3">
@@ -275,6 +383,13 @@ background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(24,24,24,0.9428183040
     <footer>
 
     </footer>
+
+   <script></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </script>
 </body>
 </html>
 
