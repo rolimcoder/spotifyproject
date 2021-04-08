@@ -476,7 +476,7 @@ svg path {
   }
 
   .menu--item {
-    margin-right: 15px;
+    margin-right: 12px;
   }
 
   .menu--item--text {
@@ -517,9 +517,7 @@ svg path {
     margin-bottom: 6.5rem;
   }
 
-  .jumbotron {
-    margin-top: 1rem;
-  }
+  
 
   .navbar--link--toggle {
     align-self: flex-end;
