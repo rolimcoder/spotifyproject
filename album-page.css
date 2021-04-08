@@ -92,6 +92,9 @@ a:hover {
   justify-content: space-between;
   /* z-index: 1; */
   margin-right: 100px;
+  box-shadow: 16px 1px 20px -2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 16px 1px 20px -2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 16px 1px 20px -2px rgba(0, 0, 0, 0.55);
 }
 
 .menu {
@@ -143,6 +146,9 @@ a:hover {
     display: flex;
     justify-content: space-between;
     z-index: 3;
+    box-shadow: 1px 13px 20px -2px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 1px 13px 20px -2px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 1px 13px 20px -2px rgba(0, 0, 0, 0.55);
   }
 
   .logo {
