@@ -14,6 +14,18 @@ body {
   padding: 0;
   min-width: 300px;
 }
+.jumbotron {
+  background-image: linear-gradient(
+      0deg,
+      rgba(24, 23, 23, 1) 0%,
+      rgba(24, 23, 23, 0.72919590199361) 35%,
+      rgba(24, 23, 23, 0) 100%
+    ),
+    url(./QueenBackground.jpeg);
+}
+.my-2 {
+  font-size: 60px;
+}
 
 .fa-ellipsis-h {
   color: white;
