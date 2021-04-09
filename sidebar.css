@@ -22,9 +22,11 @@ body {
 
 
 
-}
+
 ul.nav.justify-content-center{
-  padding-top: 1rem;
+  position: center;
+ 
+  padding-top: 2rem;
   margin-bottom: 2rem;
 
 }
@@ -215,52 +217,45 @@ a:hover {
 }
 
 
-.myButton {
-  position: relative;
-  margin-top: 33rem;
-  margin-left: -4rem;
+.signupButton {
+  
+  margin-top: 27rem;
+  margin-left: -5rem;
 	background-color:#fff;
-	border-radius:28px;
-	display:inline-block;
-	cursor:pointer;
-	color:grey;
+  border-radius:17px;
+  cursor:pointer;
+  display:inline-block;
+	color:rgb(82, 80, 80);
 	font-family:Arial;
-	font-size:10px;
-	padding:9px 79px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
-}
-.myButton:hover {
-	background-color:#e4f0f2;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
+  font-size:10px;
+  font-weight:bold;
+	padding:9px 69px;
+  text-decoration:none;
+  position: relative;
+  
+  }
 
 .loginButton {
-  position: relative;
-  margin-top: 36rem;
-  margin-left: -12rem;
-	background-color:grey;
-  border-radius:28px;
-  border-color: #fff;
-	display:inline-block;
-	cursor:pointer;
-	color:#e4f0f2;
-	font-family:Arial;
-	font-size:10px;
-	padding:9px 86px;
-	text-decoration:none;
-	
-}
-.loginButton:hover {
-	background-color:#e4f0f2;
-}
-.loginButton:active {
-	position:relative;
-	top:1px;
-}
+
+    margin-top: 30rem;
+    margin-left: -11rem;
+    background-color:#363636;
+    border-radius:17px;
+    border:2px solid #e9ebe8;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:10px;
+    font-weight:bold;
+    padding:8px 70px;
+    text-decoration:none;
+    position: relative;
+   
+  }
+
+
+
 
 footer {
   width: 100%;
@@ -536,6 +531,9 @@ svg path {
     margin-left: 5px;
   }
 
+  
+  
+
   footer {
     width: 100%;
     height: auto;
@@ -559,7 +557,72 @@ svg path {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media (max-width: 870px) {
+
+  .signupButton {
+  
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size:7px;
+    font-weight:bold;
+    padding:5px 40px;
+    text-decoration:none;
+    position: relative;
+    
+    }
+  
+  .loginButton {
+  
+      margin-top: 2rem;
+      margin-left: -5.8rem;
+      background-color:#363636;
+      border-radius:17px;
+      border:1px solid #e9ebe8;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:8px;
+      font-weight:bold;
+      padding:5px 32px;
+      text-decoration:none;
+      position: relative;
+     
+    }
+  }
+
+  @media only screen and (max-width: 1303px) {
+
+    .signupButton {
+    
+      margin-top: 32rem;
+      margin-left: -3rem;
+      font-size:8px;
+      font-weight:bold;
+      padding:6px 30px;
+      
+      }
+    
+    .loginButton {
+    
+        margin-top: 34rem;
+        margin-left: -5.8rem;
+        font-size:8px;
+        font-weight:bold;
+        padding:5px 32px;
+      
+      }
+    }
+
+@media only screen and (max-width: 767px) {
+  
+  h2{
+    font-size: 20px;
+    color: white;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
   .side-bar {
     position: relative;
   }
@@ -605,6 +668,13 @@ svg path {
 @media only screen and (max-width: 301px) {
   .side-bar {
     min-width: 280px;
+  }
+
+  h2{
+    font-size: 14px;
+    color: white;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
   }
 
   footer {
