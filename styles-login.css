@@ -69,11 +69,11 @@
   width: 100%;
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   #signup {
     padding-left: 50px;
   }
-}
+} */
 
 /*  .input-icons i {
         position: absolute;
