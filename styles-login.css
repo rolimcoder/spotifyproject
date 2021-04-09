@@ -12,9 +12,6 @@
   border-bottom: 1px solid #d9dadc;
 }
 
-.line {
-  border-top: 1px solid #d9dadc;
-}
 #span1 {
   font-size: 16px;
 }
@@ -32,7 +29,7 @@
   opacity: 0.7;
 }
 #btn-login {
-  width: 40%;
+  width: 50%;
   min-width: 100px;
 }
 
@@ -45,13 +42,20 @@
 #btn-facebook:hover {
   background-color: #3a61b3;
 }
-#btn-facebook:hover {
+#btn-apple:hover {
+  background-color: #696666;
+}
+#signup:hover {
   background-color: #333;
 }
 #input-email-username,
 #input-password {
   border: 1px solid #d9dadc;
   color: #222326;
+}
+#email-enter,
+#password-enter {
+  color: red;
 }
 .or-line {
   height: 1px;
@@ -72,16 +76,15 @@
 }
 
 /*  .input-icons i {
-    position: absolute;
-}
-  
- .input-icons {
-    width: 100%;
-    margin-bottom: 10px;
-
-  
-.icon {
-    padding: 10px;
-    min-width: 40px;
-    right: ;
-} */
+        position: absolute;
+    }
+      
+     .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+      
+    .icon {
+        padding: 10px;
+        min-width: 40px;
+        right: ;
+    } */
