@@ -730,10 +730,46 @@ min-height: 100vh;
 
 .albumList {border: 0; background-color: transparent;}
 
-div.albumList>a:hover {
+div.albumList>a {
+min-height: 60vh;
+width: 82%;
+background-color: #00008b69;
+
+}
+
+div.albumList a>img:hover {
   animation: moveToUp ease 5s; 
 
 }
+
+i.fa-heart {
+  visibility: hidden;
+display: flex;
+position: absolute;
+top: 56vh;
+left: 7vw;
+color: pink
+}
+
+i.fa-ellipsis-v {
+  visibility: hidden;
+display: flex;
+position: absolute;
+top: 56vh;
+left: 15vw;
+color: whitesmoke;
+}
+
+
+i.fa-play-circle {
+  visibility: hidden;
+display: flex;
+position: absolute;
+top: 56vh;
+left: 1vw;
+color: lightgreen;
+}
+
 
 h5.card-title {word-wrap: unset!important;}
 
@@ -757,7 +793,18 @@ h5.card-title {word-wrap: unset!important;}
 100% {filter: brightness(1);}
 }
 
+div.albumList>a:hover i.fa-ellipsis-v {
+visibility: visible;
+}
+div.albumList>a:hover i.fa-heart {
+visibility: visible;
+}
+div.albumList>a:hover i.fa-play-circle {
+visibility: visible;
+}
+
 div.albumList>a:not(:hover) {
+  background-color: transparent;
   animation: moveToDown ease 5s;
 }
 
@@ -776,6 +823,11 @@ div.albumList>a:not(:hover) {
  }
 }
 **/
+@media screen and (min-width:768px){
+  div.albumList>a {
+    width: 150%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   div#miniMenu::after {
@@ -1053,7 +1105,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./01.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./01.jpg" class="card-img-top" alt="...">
+	  <i class="far fa-play-circle fa-lg"></i>
+	  <i class="fas fa-ellipsis-v fa-lg"></i>
+	  <i class="far fa-heart fa-lg"></i>
+	  </a>
       <div class="card-body">
         <h5 class="card-title">Bohemian Rhapsody (The Original Soundtrack)</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1063,7 +1119,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./02.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./02.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">On Air</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1073,7 +1133,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./03.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./03.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">A Night At The Odeon</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1083,7 +1147,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./04.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./04.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Live At The Rainbow</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1093,7 +1161,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./05.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./05.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Live At The Rainbow (Deluxe)</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1103,7 +1175,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./06.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./06.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Hungarian Rhapsody (Live In Budapest/1986)</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1116,11 +1192,15 @@ div.albumList>a img {
 <!--END ROW 1-->
 
 <!------------------Row 2------------------------------------->
-<div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 mx-sm-5 px-sm-5 mx-3">
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 mx-sm-3 px-sm-5 mx-3">
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./07.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./07.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Bohemian Rhapsody (The Original Soundtrack)</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1130,7 +1210,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./08.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./08.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Queen+Paul Rodgers</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1140,7 +1224,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./09.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./09.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Return Of The Champions</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1150,7 +1238,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./04.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./04.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Live At The Bowl</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1160,7 +1252,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./05.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./05.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Best Of 1986</h5>
         <p class="card-text text-muted text-muted">Queen</p>
@@ -1170,7 +1266,11 @@ div.albumList>a img {
 
   <div class="col mb-4">
     <div class="card albumList">
-      <a href="#"><img src="./06.jpg" class="card-img-top" alt="..."></a>
+      <a href="#"><img src="./06.jpg" class="card-img-top" alt="...">
+        <i class="far fa-play-circle fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+        <i class="far fa-heart fa-lg"></i>
+      </a>
       <div class="card-body">
         <h5 class="card-title">Best Of 1986 (Deluxe Edition)</h5>
         <p class="card-text text-muted text-muted">Queen</p>
